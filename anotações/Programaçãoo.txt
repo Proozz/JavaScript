@@ -1,0 +1,52 @@
+WEBSITE                
+
+conteudo:HTML                     
+ estilo:CSS                        
+ integração/intereção:Javascript   
+
+................................................................................
+ AVISO
+
+não programo em HTML nem CSS
+NÃO SÃO LINGUAGUEM DE PROGRAMAÇÃO  
+
+................................................................................
+UTIL
+
+window.alert("")
+window.confirm("")
+window.prompt("")
+
+" = " igual "recebe"
+"null" igual "nulo"
+"var" igual "variavel"
+
+converte string em number
+
+Number.parseInt(n)
+numer.parsefloat(n)
+number(n) 
+typeof = indetifca se é number ou string
+
+s.length           //quantos caracteres a string tem
+s.toLowerCase()    //tudo para "MAIUSCULAS"
+s.toUpperCase()    //tudo para "minusculas"
+COMENTARIO
+................................................................................
+ usado pra fazer anotação em lingua de PROGRAMAÇÃO sem interferir no codigo
+ 
+// uma unica linha
+/*mais de uma linha de codigo*/
+/*comentario pra CSS*/ 
+................................................................................
+          identificadores                  .               Dicas
+
+As 6 regras dos identificadores            .   * MAIUSCULAS e minusculas fazem diferença
+                                               
+* Podem começar com letras, $ ou _         .   * Tente escolher nomes cccoerentes para as variaveis
+* Não podem começar como numeros                  /* não usar nomes simples como n1(idade) n2(salario) n3(horas). 
+* É possivel usar letras ou numeros        .        usar nomes mais especificos como idade, salario e horas. */
+* É possivel usar acento e simbolos
+* Não podem conter espaços                 .    * Evite se tonar um "Programador alfabeto" ou um "Programador contador"
+* Não podem ser palvras reservadas
+                                           .
