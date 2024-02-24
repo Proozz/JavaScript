@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos DOM</title>
+<style>
+   body{
+    background-color: rgb(182, 125, 230);
+    color: white;
+    font: normal 20px arial;
+
+   }
+
+
+</style>
+
 </head>
 <body>
+
+    <h1>praticando DOM</h1>
+    <p id="p">aqui vai o resultado</p>
+    <p id="p1">primeiros passos de <strong>DOM</strong></p>
+    <div>clique em mim</div>
+
+
+  <script>
     
+    var corpo = document.body
+    var p1 = document.getElementById('p')
+      p1.style.color = "blue"
+      p1.style.backgroundColor = "aqua"
+    
+    var d = document.querySelector('p#p1')
+
+    d.style.color = 'green'
+    d.style.backgroundColor = "black"
+   
+    window.alert(d.innerHTML)
+
+  </script>
+
 </body>
 </html>
