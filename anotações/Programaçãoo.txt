@@ -1,14 +1,12 @@
 
-<script>
-
 WEBSITE                
 
 conteudo:HTML                     
- estilo:CSS                        
- integração/intereção:Javascript   
+estilo:CSS                        
+integração/intereção:Javascript   
 
 ................................................................................
- AVISO
+AVISO
 
 não programo em HTML nem CSS
 NÃO SÃO LINGUAGUEM DE PROGRAMAÇÃO  
@@ -47,8 +45,8 @@ COMENTARIO
 As 6 regras dos identificadores            .   * MAIUSCULAS e minusculas fazem diferença
                                                
 * Podem começar com letras, $ ou _         .   * Tente escolher nomes cccoerentes para as variaveis
-* Não podem começar como numeros                  não usar nomes simples como n1(idade) n2(salario) n3(horas). 
-* É possivel usar letras ou numeros        .       usar nomes mais especificos como idade, salario e horas.
+* Não podem começar como numeros                 não usar nomes simples como n1(idade) n2(salario) n3(horas). 
+* É possivel usar letras ou numeros        .     usar nomes mais especificos como idade, salario e horas.
 * É possivel usar acento e simbolos
 * Não podem conter espaços                 .    * Evite se tonar um "Programador alfabeto" ou um "Programador contador"
 * Não podem ser palvras reservadas         
@@ -60,5 +58,3 @@ As 6 regras dos identificadores            .   * MAIUSCULAS e minusculas fazem d
 'eu estou aprendendo s'    // não faz interpolaçãp
 'eu estou aprendendo' + s  // usa concatenação
  eu estou aprendendo ${S}` // usa template string
- 
- </script>
