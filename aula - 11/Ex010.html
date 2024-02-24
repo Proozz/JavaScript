@@ -12,14 +12,21 @@
     Qual País em que mora? <input type="text" name="texto" id="texto">
     <input type="button" value="verificar" onclick="resposta()">
     <div id="resultado"></div>
+    <div id="resul"></div>
     <script>
 
        function resposta() {
            var nac = window.document.getElementById("texto")
-           var res = window.documentg.getElementById("resultado")
+           var res = window.document.getElementById("resultado")
+           var resu = window.document.getElementById("resul")
+
+           var na = Number(texto.value)
+
+           res.innerHTML = `o País onde vive é ${nac}`
            
-           if (nac == brasil){ res.innerHTML = "você é brasileiro"}else{
-            res.innerHTML = "Você é estrangeiro"}
+           if (nac = brasil){ resu.innerHTML = "você é brasileiro"}else{
+            resu.innerHTML = "Você é estrangeiro"}
+        
            
        }
        
