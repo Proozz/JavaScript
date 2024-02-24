@@ -11,29 +11,31 @@
 body{
     
      font-size: 80px;
-      text-align: center;
-       position: relative;
-       transform: translateY(55%); 
-
-       background-color: rgb(196, 176, 215);
+     text-align: center;
+     position: relative;
+     transform: translateY(55%); 
+     background-color: rgb(196, 176, 215);
        
 }
+
 div.contador{
-    border: 5px solid rgb(64, 13, 13);
-    border-radius: 100px;
-    background-color: rgb(178, 127, 127);
+
+     border: 5px solid rgb(64, 13, 13);
+     border-radius: 100px;
+     background-color: rgb(178, 127, 127);
 }
 
 button{
 
-    cursor: pointer;
-    width: 10rem;
-    height: 40px;
-    border-radius: 15cap;
-    background-color: rgb(194, 194, 255);
-    font-size: 1rem;
-    border-color: rgb(0, 0, 0);
-    box-shadow: 0 1px 8px 0 black;
+     cursor: pointer;
+     width: 10rem;
+     height: 40px;
+     border-radius: 15cap;
+     background-color: rgb(194, 194, 255);
+     font-size: 1rem;
+     border-color: rgb(0, 0, 0);
+     box-shadow: 0 1px 8px 0 black;
+    
 }
 
 </style>
@@ -41,17 +43,18 @@ button{
 <body>
 
     <div class="contador">
-        <div id="counter">
-      <span id="zero" class="zero">0</span>
-        </div>
-       <div class="button">
+    <div id="counter">
+       <span id="zero" class="zero">0</span>
+     </div>
+     <div class="button">
    
 
      <button id="descrementar1" class="count-button">descrementar</button>
-    
-     <button id="incrementar2" class="count-button">incrementar</button>
-
+     
      <button id="limpar3" class="count-button">limpar</button>
+
+     <button id="incrementar3" class="count-button">incrementar</button>
+
       
 
     </div>
@@ -59,11 +62,12 @@ button{
 
 <script>
     
-    const zero = document.getElementById('zero')
-    const descrementar = document.getElementById('descremetnar1')
-    const limpar = document.getElementById('limpar2')
-    const incrementar = document.getElementById('incrementar3')
-
+     const zero = document.getElementById('zero')
+     const incrementar = document.getElementById('incrementar3')
+     const descrementar = document.getElementById('descrementar1')
+     const limpar = document.getElementById('limpar3')
+    
+   
     const value = () => {    
            zero.innerHTML = count;
 
@@ -77,10 +81,24 @@ button{
             count += 1;
             value();
             
-          }, 100);
+          }, 50);
     })
 
+    descrementar.addEventListener('mousedown', () => {
+          intervalo = setInterval(() => {
+            count -= 1;
+            value();
+            
+          }, 50);
+    })
+   
+    limpar.addEventListener('click', () => {
+            count = 0;
+            value();
+    });
 
+     document.addEventListener('mouseup', () => clearInterval(intervalo))
+   
 
 
 
