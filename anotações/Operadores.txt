@@ -46,7 +46,7 @@ n = n ** 2  pode ser n ** = 2
 n = n % 5  pode ser n % = 5
  
 
-** Relacionais                                                       ** identidade
+** Relacionais                                                       ++ identidade
 
 5 < 2    (2 é menor que 5?)         true            5 ==  5   (5 igual a 5?)       true  number
 7 > 4    (7 é maior que 4?)         false           5 == '5'  (5 igual a '5'?)     true  string
@@ -55,14 +55,14 @@ n = n % 5  pode ser n % = 5
 5 == 5   (5 é igual a 5? )          true            5 === 5   (5 identidade a 5?)  true number indentico a number? sim
 4 != 4   (4 é diferente de 4?)      false
 
-** logicos
+++ logicos
 
 ! - negação-------------------------------------
-se é verdadeiro não pode ser falso
-se é falso não pode ser verdadeiro
+se é verdadeiro não pode ser falso             
+se é falso não pode ser verdadeiro             
 
-true = false
-false = true
+true = false                                   
+false = true                     
 
 
 && - conjunção---------------------------------
@@ -73,6 +73,7 @@ true  && false = false
 false && true  = false
 false && false = false
 
+
 || - disjunção-----------------------------------
 Basta um verdadeiro para ser true
 
@@ -81,5 +82,27 @@ true  || false = true
 false || true  = true
 false || false = false
 
+
 AVISO primeiro ! depois && e por ultimo ||
  
+
+** Ternario
+
+--- TEST ? true : false -------------------------------------------------------------
+++ exemplo
+
+var media1 = 5.5
+
+media > 7? 'aprovado':'reprovado'   (variavel media1 é maior que 7? sim ou não?)
+
+R: reprovado (não)
+
+--------------------------------------------------------------------------------------
+
+var media2 = 7.5
+
+media > 7? 'aprovado':'reprovado'   (variavel media2 é maior que 7? sim ou não?)
+
+R: aprovado (sim)
+
+---------------------------------------------------------------------------------------
