@@ -6,20 +6,20 @@
     <title>Document</title>
 
 <style>
+    head{
+
+border: 10px;
+background-color: black;
+
+    }
 
     body{
-       padding: 50px;
-       border: 3px solid;
-       border-color: blueviolet;
-       border-radius: 15%;
-       background-color: rgb(17, 10, 7);
-       background: fixed black;
-       height: 350px;
-       box-shadow: 0 2px 0px 0 rgb(0, 0, 0), 0 10px 70px 0 hsl(0, 100%, 50%);
-       max-width: 350px;
+        border: 10px black;
+      background-color: rgb(29, 28, 28);
+      max-width: 470px;
        margin: auto;
        position: relative;
-       transform: translateY(45%); 
+       transform: translateY(15%); 
 
 }
 
@@ -39,6 +39,13 @@ button{
 
 }
 
+textarea{
+    margin: 25px;
+    box-shadow: 0 1px 100px 0 rgba(84, 3, 121, 0.795), 0 1px 100px 0 rgb(18, 9, 143);
+   resize: none;
+    
+}
+
 </style>
 
 </head>
@@ -47,7 +54,7 @@ button{
 <div class="button">
 
   
-    <textarea id="notas"  cols="33" rows="18"> </textarea>
+    <textarea id="notas"  cols="60" rows="25"> </textarea>
     <button id="limpar">Limpar</button>
     <button id="salvar">salvar</button>
 
@@ -63,7 +70,7 @@ button{
 
  limpar.addEventListener('click' , function() {
 
-    notas.value = ' ';
+    notas.value = '1';
 
  });
 

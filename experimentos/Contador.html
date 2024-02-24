@@ -9,9 +9,9 @@
 <style>
 
 body{
-    font-size: 100px;
-   text-align: center;
-    height: 578px;
+    
+     font-size: 80px;
+      text-align: center;
        position: relative;
        transform: translateY(55%); 
 
@@ -24,34 +24,66 @@ div.contador{
     background-color: rgb(178, 127, 127);
 }
 
-div.button{ 
+button{
 
-atu
-    
+    cursor: pointer;
+    width: 10rem;
+    height: 40px;
+    border-radius: 15cap;
+    background-color: rgb(194, 194, 255);
+    font-size: 1rem;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 1px 8px 0 black;
 }
-
-
 
 </style>
 
 <body>
-    <main>
 
-     <div class="contador">
-      <div class="zero">0</div>
+    <div class="contador">
+        <div id="counter">
+      <span id="zero" class="zero">0</span>
+        </div>
        <div class="button">
+   
 
-     <input type="submit" value="decrementar">
-     <input type="submit" value="zerar">
-     <input type="submit" value="incrementar">
-     
+     <button id="descrementar1" class="count-button">descrementar</button>
+    
+     <button id="incrementar2" class="count-button">incrementar</button>
 
-       </div>
-     </div>
-    </main>
+     <button id="limpar3" class="count-button">limpar</button>
+      
+
+    </div>
+ </div>
+
 <script>
+    
+    const zero = document.getElementById('zero')
+    const descrementar = document.getElementById('descremetnar1')
+    const limpar = document.getElementById('limpar2')
+    const incrementar = document.getElementById('incrementar3')
 
-function
+    const value = () => {    
+           zero.innerHTML = count;
+
+    };
+
+    let count = 0;
+    let intervalo = 0;
+
+    incrementar.addEventListener('mousedown', () => {
+          intervalo = setInterval(() => {
+            count += 1;
+            value();
+            
+          }, 100);
+    })
+
+
+
+
+
 
 </script>
 </body>
