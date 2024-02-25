@@ -4,9 +4,31 @@
 if(condição){ true }else{ false }   else = se não
 
 
-** Tipos de condição-------------------------------------------
+** Tipos de condição------------------------------------------------------------------
 
-if(condição){ true }              >> > Condição Simples
 
-if(condição){ true }else{ false } >> > Condição Composto
+if (condição){ true }                                         | >> > Condição Simples
+                                                               
+if (condição){ true }else{ false }                            | >> > Condição Composto
+                                                               
+if (condição){ true }else{ if(condição){ true }else{ false }} | >> > condição aninhada
  
+
+ ** condição multipla -------------------------------------------------------------------
+ BREAK É OBRIGATORIO
+
+
+ switch(expressão) {
+
+    case valor 1:
+     break
+
+    case valor 2:
+     break
+
+    case valor 3:
+     break
+
+    default:
+     break                            defalut = (else)
+ }
