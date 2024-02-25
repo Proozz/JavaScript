@@ -1,0 +1,10 @@
+repetição so acontecera se a condição for verdadeira(true)
+
+while(condição) {}
+
+
+function comerPizza() {
+     while(temfaria()){
+        comerfatia()
+     }
+}
